@@ -15,7 +15,7 @@ public class Etape1 {
 
         // Get user's name
         System.out.printf(
-                "Bonjour, bienvenue dans notre cinéma ! \nJe suis GUHHH, votre assistant de réservation. \nS'il-vous-plaît, indiquez-moi votre nom : ");
+                "Bonjour, bienvenue dans notre cinéma ! \nJe suis [Nom à determiner], votre assistant de réservation. \nS'il-vous-plaît, indiquez-moi votre nom : ");
         String username = sc.nextLine();
         System.out.printf("\nBienvenue %s ! ", username);
 
@@ -80,7 +80,7 @@ public class Etape1 {
 
                     String chosen_movie = "to_fill";
                     while (!movies.keySet().contains(chosen_movie)) {
-                        System.out.printf("Choisissez votre film entre %s : ", String.join(",", movies.keySet()));
+                        System.out.printf("Choisissez votre film entre %s : ", String.join(", ", movies.keySet()));
                         chosen_movie = sc.nextLine();
                     }
 
