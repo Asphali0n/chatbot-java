@@ -16,7 +16,7 @@ public class Etape1 {
         System.out.printf(
                 "Bonjour, bienvenue dans notre cinéma ! \nJe suis GUHHH, votre assistant de réservation. \nS'il-vous-plaît, indiquez-moi votre nom : ");
         String username = sc.nextLine();
-        System.out.printf("\nBienvenue %s ! ", username);
+        System.out.printf("\nBienvenue %s !\nChoisissez une option pour commencer : ", username);
         
         boolean quit = false;
 
@@ -133,7 +133,7 @@ public class Etape1 {
                     
                     choice = -1; // Random value
                     while (choice != 0 && choice != 1) {
-                        System.out.printf("Choisissez entre quitter (0) et continuer (1) : ");
+                        System.out.printf("Choisissez entre quitter (0) et recommencer (1) : ");
                         choice = sc.nextInt();
                     if (choice == 0) {
                         quit = true;
@@ -152,6 +152,6 @@ public class Etape1 {
 
         }
         
-
+        sc.close();
     }
 }
